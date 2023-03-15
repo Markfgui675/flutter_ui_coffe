@@ -4,6 +4,11 @@ import 'home.dart';
 
 void main(){
   runApp(MaterialApp(
-    home: Home()
+    debugShowCheckedModeBanner: false,
+    home: Home(),
+    theme: ThemeData(
+      brightness: Brightness.dark,
+      primarySwatch: Colors.orange
+    ),
   ));
 }
